@@ -16,3 +16,8 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+  Dejan-Step:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "This is my step"
