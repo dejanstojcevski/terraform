@@ -4,6 +4,8 @@ on: [workflow_dispatch]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
+    env:
+      DEJAN: "dejan"
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
@@ -20,4 +22,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "This is my step"
+          echo $DEJAN
